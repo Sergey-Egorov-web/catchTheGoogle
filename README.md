@@ -8,9 +8,7 @@
   1 2 3
   4 5 6
   7 8 9
-  https://www.youtube.com/watch?v=xx7aEs1bw78
-
-https://www.figma.com/file/w2aXK7lQfsOo6RCoA9G7hJ/Precourse-%2F-Sprint-%
+ 
 
 - google should win
 
