@@ -1,3 +1,5 @@
+https://sergey-egorov-web.github.io/catchTheGoogle/
+
 - place players to the grid
 - create components for Player and for Google (img)
 - when google teleporting check player positions
@@ -8,7 +10,6 @@
   1 2 3
   4 5 6
   7 8 9
- 
 
 - google should win
 

@@ -25,7 +25,7 @@ const _state = {
   },
 
   image: {
-    google: "../../ui/sources/image/google-color.png",
+    google: "../../../ui/sources/image/google-color.png",
     player1: "../../ui/sources/image/person1-running.png",
     player2: "../../ui/sources/image/person2-running.png",
   },
