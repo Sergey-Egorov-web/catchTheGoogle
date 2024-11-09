@@ -25,9 +25,9 @@ const _state = {
   },
 
   image: {
-    google: "../ui/sources/image/google-color.png",
-    player1: "../ui/sources/image/person1-running.png",
-    player2: "../ui/sources/image/person2-running.png",
+    google: "../../ui/sources/image/google-color.png",
+    player1: "../../ui/sources/image/person1-running.png",
+    player2: "../../ui/sources/image/person2-running.png",
   },
   playerName: {
     google: "Google",
@@ -36,8 +36,8 @@ const _state = {
   },
 
   sounds: {
-    googleWin: "/ui/sources/sound/googleWin.wav",
-    playerWin: "/ui/sources/sound/playerWin.wav",
+    googleWin: "../../ui/sources/sound/googleWin.wav",
+    playerWin: "../../ui/sources/sound/playerWin.wav",
   },
   winner: null,
   timeToWin: null,
