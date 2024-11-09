@@ -26,8 +26,8 @@ const _state = {
 
   image: {
     google: "../../../ui/sources/image/google-color.png",
-    player1: "../../ui/sources/image/person1-running.png",
-    player2: "../../ui/sources/image/person2-running.png",
+    player1: "ui/sources/image/person1-running.png",
+    player2: "/catchTheGoogle/ui/sources/image/person2-running.png",
   },
   playerName: {
     google: "Google",
