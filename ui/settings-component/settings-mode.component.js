@@ -1,6 +1,7 @@
 import { getStatus, startGame } from "../../state/data.js";
 import { gridSizeComponent } from "./grid-size.component.js/gridSizeComponent.js";
 import { playerNameComponent } from "./playerNameComponent/playerNameComponent.js";
+import { pointsToLoseComponent } from "./pointsToLose/pointsToLoseComponent.js";
 import { pointsToWinComponent } from "./pointsToWin/pointsToWinComponent.js";
 
 export function SettingsMode() {
@@ -26,6 +27,9 @@ SettingsMode.render = (element, localState) => {
 
   const pointsToWinElement = pointsToWinComponent();
   element.append(pointsToWinElement.element);
+
+  const pointsToLoseElement = pointsToLoseComponent();
+  element.append(pointsToLoseElement.element);
 
   const playerNameInstance = playerNameComponent();
   localState.childrenCleanups.push(playerNameInstance.cleanup);

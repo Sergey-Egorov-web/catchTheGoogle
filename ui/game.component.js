@@ -70,7 +70,7 @@ Game.render = (element, localState) => {
       audioComponent("player");
 
       const winModeInstance = winMode();
-      //  localState.childrenCleanups.push(winModeInstance.cleanup);
+      localState.childrenCleanups.push(winModeInstance.cleanup);
       element.append(winModeInstance.element);
       break;
     default:

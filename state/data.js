@@ -131,6 +131,7 @@ let jumpIntervalId;
  */
 export function movePlayer(playerNumber, direction) {
   // debugger;
+  console.log(_state.settings.pointsToLose);
   const positionReducers = {
     [MOVE_DIRECTIONS.UP]: (coords) => {
       if (
@@ -260,6 +261,7 @@ function _escapeGoogle() {
   _state.points.google++;
 
   if (_state.points.google === _state.settings.pointsToLose) {
+    console.log("stop");
     _state.status = GAME_STATUSES.LOSE;
     _notify(EVENTS.GAME_END);
     _notify(EVENTS.STATUS_CHANGED);
@@ -367,4 +369,25 @@ export function getSounds(player) {
   } else {
     return _state.sounds.playerWin;
   }
+}
+
+//функции получения очков для проигрыша
+
+export function changePointsToLose(points) {
+  _state.settings.pointsToLose = parseInt(points, 10);
+  console.log(`Points to Lose ${_state.settings.pointsToLose}`);
+}
+
+export function getPointsToLose() {
+  return _state.settings.pointsToLose;
+}
+//функции получения очков для выигрыша
+
+export function changePointsToWin(points) {
+  _state.settings.pointsToWin = parseInt(points, 10);
+  console.log(`Points to Win ${_state.settings.pointsToWin}`);
+}
+
+export function getPointsToWin() {
+  return _state.settings.pointsToWin;
 }

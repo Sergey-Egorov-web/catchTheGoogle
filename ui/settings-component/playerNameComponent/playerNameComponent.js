@@ -29,7 +29,7 @@ playerNameComponent.render = (element) => {
 
   const dialog = document.createElement("dialog");
 
-  element.append(`player1 name: ${getPlayerName(1)}`);
+  element.append(`Player1 name: ${getPlayerName(1)}`);
 
   const changeNamePlayer1Button = document.createElement("button");
 
@@ -48,7 +48,7 @@ playerNameComponent.render = (element) => {
 
   element.append(document.createElement("br")); // Разрыв строки
 
-  element.append(`player2 name: ${getPlayerName(2)}`);
+  element.append(`Player2 name: ${getPlayerName(2)}`);
 
   const changeNamePlayer2Button = document.createElement("button");
 

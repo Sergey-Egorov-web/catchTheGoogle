@@ -3,6 +3,7 @@ import { timerComponent } from "./timerComponent.js";
 
 export function boardComponent() {
   const element = document.createElement("div");
+  element.classList.add("my-class");
   console.log("boardComponent created...");
 
   const localState = {

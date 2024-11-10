@@ -4,7 +4,7 @@ export function timerComponent() {
   let timerInterval;
   let startTime = 0;
 
-  const timer = document.createElement("div");
+  const timer = document.createElement("span");
 
   console.log("create timerComponent...");
 

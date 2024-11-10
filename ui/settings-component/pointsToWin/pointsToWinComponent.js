@@ -1,5 +1,7 @@
+import { pointsToWInSelectComponent } from "./pointsToWinSelectComponent.js";
+
 export function pointsToWinComponent() {
-  const element = document.createElement("div");
+  const element = document.createElement("span");
 
   pointsToWinComponent.render(element);
 
@@ -8,5 +10,6 @@ export function pointsToWinComponent() {
 
 pointsToWinComponent.render = (element) => {
   element.append("points to win");
-  element.append("10");
+  // element.append("10");
+  element.append(pointsToWInSelectComponent());
 };
